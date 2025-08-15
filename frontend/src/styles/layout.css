@@ -1,0 +1,150 @@
+/* Custom Layout Styles for AI Tutor */
+
+/* Ensure consistent scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sidebar improvements */
+.sidebar-nav {
+  scrollbar-width: thin;
+  scrollbar-color: #e5e7eb #f9fafb;
+}
+
+.sidebar-nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+/* Dark mode scrollbar */
+.dark .sidebar-nav {
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+.dark .sidebar-nav::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark .sidebar-nav::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+.dark .sidebar-nav::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Content area improvements */
+.content-container {
+  max-width: 1280px; /* 7xl */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .content-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Ensure consistent card spacing */
+.dashboard-card {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 1023px) {
+  .mobile-adjusted {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Focus improvements for better accessibility */
+.focus-ring:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Animation improvements */
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Prevent content shift on mobile */
+.content-stable {
+  min-height: calc(100vh - 4rem);
+}
+
+/* Ensure proper alignment for cards and sections */
+.section-spacing {
+  margin-bottom: 2rem;
+}
+
+.section-spacing:last-child {
+  margin-bottom: 0;
+}
+
+/* Header improvements */
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dark .header-sticky {
+  background-color: rgba(31, 41, 55, 0.8);
+}
+
+/* Responsive text scaling */
+@media (max-width: 640px) {
+  .responsive-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Ensure proper button alignment */
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Improved shadow for cards */
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode card shadows */
+.dark .card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dark .card-shadow-hover:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
